@@ -1,6 +1,6 @@
-package com.github.adnansm.timelytextview.model.number;
+package com.carlosdelachica.timelynumberview.model.number;
 
-import com.github.adnansm.timelytextview.model.core.Figure;
+import com.carlosdelachica.timelynumberview.model.core.Figure;
 
 public class Seven extends Figure {
     private static final float[][] POINTS = {

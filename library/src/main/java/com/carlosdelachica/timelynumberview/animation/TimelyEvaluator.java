@@ -1,4 +1,4 @@
-package com.github.adnansm.timelytextview.animation;
+package com.carlosdelachica.timelynumberview.animation;
 
 import com.nineoldandroids.animation.TypeEvaluator;
 

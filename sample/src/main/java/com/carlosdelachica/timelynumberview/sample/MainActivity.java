@@ -1,4 +1,4 @@
-package com.github.adnansm.timelytextview.sample;
+package com.carlosdelachica.timelynumberview.sample;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.SeekBar;
 import android.widget.Spinner;
-import com.github.adnansm.timelytextview.TimelyNumberView;
+import com.carlosdelachica.timelynumberview.TimelyNumberView;
 import com.nineoldandroids.animation.ObjectAnimator;
 
 public class MainActivity extends Activity {

@@ -1,6 +1,6 @@
-package com.github.adnansm.timelytextview.model;
+package com.carlosdelachica.timelynumberview.model;
 
-import com.github.adnansm.timelytextview.model.number.*;
+import com.carlosdelachica.timelynumberview.model.number.*;
 
 import java.security.InvalidParameterException;
 

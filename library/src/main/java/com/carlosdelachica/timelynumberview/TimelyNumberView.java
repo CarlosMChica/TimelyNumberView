@@ -1,4 +1,4 @@
-package com.github.adnansm.timelytextview;
+package com.carlosdelachica.timelynumberview;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -8,8 +8,8 @@ import android.graphics.Path;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.github.adnansm.timelytextview.animation.TimelyEvaluator;
-import com.github.adnansm.timelytextview.model.NumberUtils;
+import com.carlosdelachica.timelynumberview.animation.TimelyEvaluator;
+import com.carlosdelachica.timelynumberview.model.NumberUtils;
 import com.nineoldandroids.animation.ObjectAnimator;
 import com.nineoldandroids.util.Property;
 

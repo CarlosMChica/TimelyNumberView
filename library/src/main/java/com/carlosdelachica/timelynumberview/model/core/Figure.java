@@ -1,4 +1,4 @@
-package com.github.adnansm.timelytextview.model.core;
+package com.carlosdelachica.timelynumberview.model.core;
 
 /**
  * Model class for cubic bezier figure
