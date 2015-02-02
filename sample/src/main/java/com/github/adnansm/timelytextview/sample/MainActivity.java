@@ -8,13 +8,13 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.SeekBar;
 import android.widget.Spinner;
-import com.github.adnansm.timelytextview.TimelyView;
+import com.github.adnansm.timelytextview.TimelyNumberView;
 import com.nineoldandroids.animation.ObjectAnimator;
 
 public class MainActivity extends Activity {
     public static final int            DURATION       = 1000;
     public static final int            NO_VALUE       = -1;
-    private             TimelyView     timelyView     = null;
+    private TimelyNumberView timelyNumberView = null;
     private             SeekBar        seekBar        = null;
     private             Spinner        fromSpinner    = null;
     private             Spinner        toSpinner      = null;
@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        timelyView = (TimelyView) findViewById(R.id.textView1);
+        timelyNumberView = (TimelyNumberView) findViewById(R.id.textView1);
         seekBar = (SeekBar) findViewById(R.id.seekBar);
         fromSpinner = (Spinner) findViewById(R.id.fromSpinner);
         toSpinner = (Spinner) findViewById(R.id.toSpinner);
@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 from = position - 1;
                 if(from != NO_VALUE && to != NO_VALUE) {
-                    objectAnimator = timelyView.animate(from, to);
+                    objectAnimator = timelyNumberView.animate(from, to);
                     objectAnimator.setDuration(DURATION);
                 } else {
                     objectAnimator = null;
@@ -57,7 +57,7 @@ public class MainActivity extends Activity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 to = position - 1;
                 if(from != NO_VALUE && to != NO_VALUE) {
-                    objectAnimator = timelyView.animate(from, to);
+                    objectAnimator = timelyNumberView.animate(from, to);
                     objectAnimator.setDuration(DURATION);
                 } else {
                     objectAnimator = null;

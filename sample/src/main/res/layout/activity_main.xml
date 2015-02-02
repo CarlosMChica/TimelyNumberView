@@ -10,7 +10,7 @@
               tools:context=".MainActivity">
 
 
-    <com.github.adnansm.timelytextview.TimelyView
+    <com.github.adnansm.timelytextview.TimelyNumberView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
