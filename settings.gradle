@@ -1,2 +1,2 @@
-include ':timelytextview'
+include ':library'
 include ':sample'
