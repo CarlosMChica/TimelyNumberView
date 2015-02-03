@@ -30,6 +30,7 @@ public class TimelyNumberView extends View {
     private Path path = null;
     private float[][] controlPoints = null;
     private int textSize = -1;
+    private int textColor = Color.BLACK;
 
     public TimelyNumberView(Context context) {
         super(context);
@@ -107,7 +108,7 @@ public class TimelyNumberView extends View {
         // A new paint with the style as stroke.
         paint = new Paint();
         paint.setAntiAlias(true);
-        paint.setColor(Color.BLACK);
+        paint.setColor(textColor);
         paint.setStrokeWidth(5.0f);
         paint.setStyle(Paint.Style.STROKE);
         path = new Path();
@@ -116,4 +117,10 @@ public class TimelyNumberView extends View {
     public void setTextSize(int textSize) {
         this.textSize = textSize;
     }
+
+    public void setTextColor(int textColor) {
+        this.textColor = textColor;
+        paint.setColor(textColor);
+    }
+
 }

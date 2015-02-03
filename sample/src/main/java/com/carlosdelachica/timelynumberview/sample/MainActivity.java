@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import com.carlosdelachica.timelynumberview.TimelyNumberView;
+import com.github.adnansm.timelytextview.sample.R;
 import com.nineoldandroids.animation.ObjectAnimator;
 
 public class MainActivity extends Activity {
@@ -27,7 +28,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        timelyNumberView = (TimelyNumberView) findViewById(R.id.textView1);
+        timelyNumberView = (TimelyNumberView) findViewById(R.id.timelyNumberView);
         seekBar = (SeekBar) findViewById(R.id.seekBar);
         fromSpinner = (Spinner) findViewById(R.id.fromSpinner);
         toSpinner = (Spinner) findViewById(R.id.toSpinner);
